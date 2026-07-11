@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Welcome } from './Welcome'
 import { Button } from './Button'
+import { Hello, HelloWithoutJSX } from './Hello'
 import './App.css'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
 
   return (
     <div>
-      <h1>Hello World!</h1>
+      <HelloWithoutJSX />
       <Welcome />
       <Button />
     </div>
