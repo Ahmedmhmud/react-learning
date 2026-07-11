@@ -1,7 +1,6 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
-// import heroImg from './assets/hero.png'
+import { Welcome } from './Welcome'
+import { Button } from './Button'
 import './App.css'
 
 function App() {
@@ -10,13 +9,10 @@ function App() {
   return (
     <div>
       <h1>Hello World!</h1>
-      <Welecome />
+      <Welcome />
+      <Button />
     </div>
   )
-}
-
-function Welecome () {
-  return <h2>Wlecome User!</h2>
 }
 
 export default App
