@@ -10,10 +10,13 @@ function App() {
   return (
     <div>
       <h1>Hello World!</h1>
+      <Welecome />
     </div>
   )
 }
 
-
+function Welecome () {
+  return <h2>Wlecome User!</h2>
+}
 
 export default App
