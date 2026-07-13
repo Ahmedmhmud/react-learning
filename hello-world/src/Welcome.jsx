@@ -1,3 +1,3 @@
-export const Welcome = () => {
-    return <h2>Wlecome User!</h2>
+export const Welcome = ({name = "user"}) => {
+    return <h2>Welcome {name}!</h2>
 }
