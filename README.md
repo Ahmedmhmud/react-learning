@@ -205,4 +205,34 @@ Examples for lists that satisfy those conditions: **Navigation menu**.
 
 ---
 
-### 
+### Styling React components
+
+We can style components with the style attribute:
+```jsx
+export const Alert = ({ children }) => {
+    return (
+        <div style={{
+            backgroundColor: black;
+        }}>{children}</div>
+    )
+}
+```
+
+The first curly braces for embedding JS object inside JSX, the second one is for the object itself.
+
+This method can get messy very fast if the styling increases, so we separate the styling in a css module, As if we didn't make it a module it will be global.
+
+```jsx
+import styles from './Alert.module.css'
+
+export const Alert = ({ children, type = "success" }) => {
+    return (
+        <div className={`${styles.alert} ${styles[type]}`}>{children}</div>
+    )
+}
+```
+
+We wrote `styles[type]` as `type` is dynamic class.
+
+---
+
