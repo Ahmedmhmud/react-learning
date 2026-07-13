@@ -1,5 +1,25 @@
 # Notes on React
 
+## Project initialization
+
+1. Run this command
+```bash
+npm create vite@latest
+```
+
+2. Name your project.
+
+3. Select a framework: **React**.
+
+4. Select a variant: **JavaScript + React compiler**.
+
+5. Which linter: **ESLint** is prefered for small projects.
+
+6. Run this command to initiate the server:
+```bash
+npm run dev
+```
+
 ## JSX
 
 Normal pure DOM manipulation requires so much code and hard to read, So JSX is the solution as it allows to writenested  HTML tags, but it is not HTML, React converts this JSX into JavaScript and updates the DOM.
