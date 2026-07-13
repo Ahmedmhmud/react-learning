@@ -236,3 +236,24 @@ We wrote `styles[type]` as `type` is dynamic class.
 
 ---
 
+### Event handling
+
+There is 2 simple steps for responding to events:
+- Define a function that should be executed when the event occurs.
+- Assign this function to a special prop `On`.
+
+You can also access the event object and extract useful info about the event in the function you defined.
+
+```jsx
+export const CustomButton = () => {
+    const handleClick = (e) => { // e is the event object
+        alert('Thanks for clicking')
+        console.log(e.target)
+        console.log(e.button)
+    }
+
+    return (
+        <button onClick={handleClick}>Click</button>
+    )
+}
+```
