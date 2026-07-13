@@ -7,6 +7,7 @@ import { ProductList } from './ProductList'
 import './App.css'
 import { Alert } from './Alert'
 import { CustomButton } from './CustomButton'
+import { Menu } from './Menu'
 
 function App() {
 //  const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       <Alert>Everything is loaded</Alert>
       <Alert type="error">Something went wrong!!!</Alert>
       <CustomButton />
+      <Menu />
     </div>
   )
 }

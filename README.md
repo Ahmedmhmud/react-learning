@@ -257,3 +257,13 @@ export const CustomButton = () => {
     )
 }
 ```
+
+We can also pass the handler function by props if we need to reuse the button for more than one component.
+```jsx
+export const MenuItem = ({ name, price, onOrder }) => {
+    return (
+        // Code
+        <button onClick={() => onOrder(name, price)}>Order</button>
+    )
+}
+```
