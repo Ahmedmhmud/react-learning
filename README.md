@@ -287,3 +287,29 @@ export const MenuItem = ({ name, price, onOrder }) => {
     )
 }
 ```
+
+---
+
+### State
+
+Until now, we still don't update the screen WHY?
+
+- Changing the values of variables doesn't update the screen.
+- Every time the component renders (the page reloads), all variables reset to their initial values.
+
+To solve this problem, React provides **state**, it is the component's *memory*.
+
+Wecan se the `useState()` hook that React provides, it returns the current state and the setter function and takes in its arguements initial state.
+- Initial state can be:
+    - The initial value of the variable we want to update
+    - An arrow function, it is called `Lazy initialization`, React calls this function on component render only and that is when we want to calculate the initial state.
+
+- Note: If you used the same component that has state twice, updating one will **NOT** effect the other.
+
+```jsx
+const [count, setCount] = useState(0)
+
+const handleCount = () => {
+    setCount(count + 1)
+}
+```
