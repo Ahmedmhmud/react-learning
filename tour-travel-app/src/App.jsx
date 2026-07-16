@@ -2,6 +2,8 @@ import React from "react";
 import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
+import { Contact } from "./components/Contact";
 import { Features } from "./components/Features";
 import { Destination } from "./components/Destination";
 
@@ -23,10 +25,16 @@ function App() {
           <Destination />
         </div>
 
-        <div>
+        <div id="about">
           <About />
         </div>
+
+        <div id="contact">
+          <Contact />
+        </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
