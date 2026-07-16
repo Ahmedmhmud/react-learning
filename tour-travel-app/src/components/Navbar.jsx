@@ -16,7 +16,7 @@ export const Navbar = () => {
             <div className="flex flex-row items-center justify-between p-5 md:px-32 px-5 bg-darkBackground text-white">
                 <div className="flex items-center">
                     <Link to="/" spy={true} smooth={true} duration={500} className="cursor-pointer">
-                        <h1 className="font-semibold text-xl cursor-pointer">Trivago</h1>
+                        <h1 className="font-semibold text-xl cursor-pointer" style={{ color: "lightyellow" }}>Trivago</h1>
                     </Link>
                 </div>
                 <nav className="hidden lg:flex items-center gap-5 md:gap-10 text-sm md:text-base">
